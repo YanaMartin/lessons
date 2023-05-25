@@ -39,13 +39,16 @@ def multi_dict(d):
 
 #print(multi_dict(mydict))
 
-#Write a function to create a sorted dictionary by key from the original
-#dictionary. https://github.com/YanaMartin/pyladies_poam.git
+
+mydict={'b':1, 'a':2, 'c':3}
+#print(mydict.items())
 
 
 def sorted(d):
-    new_d=d.sorted
-    return new_d
+    Keys = list(d.keys())
+    Keys.sort()
+    new_dict = {key: d[key] for key in Keys}
+    print(new_dict)
 
 #print(sorted(mydict))
 
