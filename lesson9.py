@@ -52,6 +52,14 @@ def sorted(d):
 
 #print(sorted(mydict))
 
+#Write a program to replace the last value of tuples in a list.
+mylist= [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+print([t[:-1] + (100,) for t in mylist])
+#for t in mylist:
+#    print(t[:-1] + (444,))
+
+
+
 
 
 
